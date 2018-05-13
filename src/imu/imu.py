@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
 from mpu6050 import imu  as i
 import time
@@ -6,7 +7,7 @@ import time
 conected=0
 while conected==0:
     try:
-        imu=i()
+        imu=i(1,0x68)  #tipo de bus, direccion i2c
         conected=1
     except IOError:
         print 'sensor no conectado'

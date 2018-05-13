@@ -1,10 +1,13 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 import smbus
 import math
 
 class imu():
-    bus = smbus.SMBus(1) # or bus = smbus.SMBus(1) for Revision 2
-    address = 0x68       # This is the address value read via the i2cdetect command
-    def __init__(self):
+    def __init__(self,bus,address):
+        self.bus = smbus.SMBus(bus) # or bus = smbus.SMBus(1) for Revision 2
+        self.address = address
         # Power management registers
         power_mgmt_1 = 0x6b
         power_mgmt_2 = 0x6c
