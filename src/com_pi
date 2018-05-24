@@ -1,0 +1,6 @@
+#!/bin/bash
+echo Iniciando comunicacion
+cd ~/ros_catkin_ws
+source ./devel/setup.bash
+export ROS_MASTER_URI=http://dani-HP-Pavilion-15-Notebook-PC:11311
+rosrun beginner_tutorials talker.py
