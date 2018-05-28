@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/dani/Sumobot_ampli_rob/devel -DCMAKE_INSTALL_PREFIX=/home/dani/Sumobot_ampli_rob/install -G Unix Makefiles
