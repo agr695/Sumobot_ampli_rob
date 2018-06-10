@@ -13,7 +13,7 @@ class laser():
         led_addr = 0x42
         ALS_addr = 0x41
         # Power management value
-        set_led = 0x3F
+        set_led = 0x03
         act_ALS_PS = 0x06
         # Now wake the 6050 up as it starts in sleep mode
         self.bus.write_byte_data(self.address, led_addr, set_led)
