@@ -231,7 +231,7 @@ class servo():
         self.dc_min=dc_min
         GPIO.setmode(GPIO.BOARD)
         GPIO.setup(pin, GPIO.OUT)
-        self.p = GPIO.PWM(pin, frec)  # channel=12 frequency=50
+        self.p = GPIO.PWM(pin, frec) 
         self.p.start(dc_ini)
 
     def set_dc(self,dc):
